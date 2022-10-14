@@ -4,6 +4,8 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request, 'home.html', {'name': 'foisal'})
+
+
 def add(request):
     val1 = int(request.GET['num1'])
     val2 = int(request.GET['num2'])
